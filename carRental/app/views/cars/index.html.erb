@@ -1,0 +1,8 @@
+<h1> Lista Pojazdow </h1>
+
+<% for car in @cars %>
+  <div class="car">
+    <h2><%= link_to car.version, car %></h2>
+  </div>
+<% end %>
+<p><%= link_to "Add a New Car", new_car_path %> </p>
