@@ -1,0 +1,15 @@
+Car: <%= @car.brand @car.version %>
+<hr />
+<% form_for @comment, :url => { :action => :create, :id => @car.id} do |f| -%>
+  Nickname: <%= f.text_field :nickname %> <br />
+  Comment: <%= f.text_field :content %> <br />
+  <%= f.submit %>
+<% end -%>
+<hr />
+<if @car.comments.exists? %>
+  <% for item in @car.comments %>
+  <%= item.nickname %>: <%= item.content %> <br />
+<% end %>
+<% else %>
+No rentals yet
+<% end %> 
