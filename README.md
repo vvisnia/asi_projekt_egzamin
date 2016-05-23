@@ -2,6 +2,7 @@
 Projekt zespołowy na zaliczenie egzaminu z ASI.
 
 Nazwa grupy: 2muchwork
+
 Sklad Grupy:
 
 Bartosz Wiśniewski
