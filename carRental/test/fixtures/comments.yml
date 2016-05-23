@@ -3,9 +3,9 @@
 one:
   nickname: MyString
   content: MyString
-  car_id: 1
+  car: one
 
 two:
   nickname: MyString
   content: MyString
-  car_id: 1
+  car: two
