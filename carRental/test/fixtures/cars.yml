@@ -2,16 +2,16 @@
 
 one:
   brand: MyString
-  type: 
+  genus: MyString
   gearbox: MyString
   version: MyString
-  yop: 1
+  yop: MyString
   available: false
 
 two:
   brand: MyString
-  type: 
+  genus: MyString
   gearbox: MyString
   version: MyString
-  yop: 1
+  yop: MyString
   available: false
