@@ -1,0 +1,9 @@
+elo:
+<%= render 'form', comment: @comment %>
+<hr />
+Komentarze:
+
+  <% for item in @car.comments %>
+  <%= item.nickname %>: <%= item.content %> <br />
+  <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+<% end %>

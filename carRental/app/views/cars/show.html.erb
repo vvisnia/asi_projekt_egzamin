@@ -25,19 +25,10 @@
   <%= @car.yop %>
 </p>
 
-
-
-<p>
-  <strong>Image:</strong>
-  <%= image_tag @car.image.url(:thumb)%>
-</p>
-
 <p>
   <strong>Available:</strong>
   <%= @car.available %>
 </p>
-
-
 
 <%= link_to 'Edit', edit_car_path(@car) %> |
 <%= link_to 'Back', cars_path %>

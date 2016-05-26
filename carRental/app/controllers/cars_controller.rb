@@ -28,7 +28,7 @@ class CarsController < ApplicationController
 
     respond_to do |format|
       if @car.save
-        format.html { redirect_to @car, notice: 'Pojazd zostal dodany.' }
+        format.html { redirect_to @car, notice: 'Car was successfully created.' }
         format.json { render :show, status: :created, location: @car }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class CarsController < ApplicationController
   def update
     respond_to do |format|
       if @car.update(car_params)
-        format.html { redirect_to @car, notice: 'Pojazd zostal zedytowany.' }
+        format.html { redirect_to @car, notice: 'Car was successfully updated.' }
         format.json { render :show, status: :ok, location: @car }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class CarsController < ApplicationController
   def destroy
     @car.destroy
     respond_to do |format|
-      format.html { redirect_to cars_url, notice: 'Usunieto pojazd.' }
+      format.html { redirect_to cars_url, notice: 'Car was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -69,6 +69,6 @@ class CarsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def car_params
-      params.require(:car).permit(:brand, :genus, :gearbox, :version, :yop, :available, :image)
+      params.require(:car).permit(:brand, :genus, :gearbox, :version, :yop, :available)
     end
 end
