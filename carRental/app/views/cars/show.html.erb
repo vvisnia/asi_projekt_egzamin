@@ -1,43 +1,35 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = Car -%>
+<div class="page-header">
+  <h1><%=t '.title', default: model_class.model_name.human.titleize %></h1>
+</div>
 
-<p>
-  <strong>Brand:</strong>
-  <%= @car.brand %>
-</p>
+<div class="fieldset">
+  <dl>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:brand) %></dt>
+      <dd><pre class="prettyprint"><%= @car.brand %></pre></dd>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:genus) %></dt>
+      <dd><pre class="prettyprint"><%= @car.genus %></pre></dd>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:gearbox) %></dt>
+      <dd><pre class="prettyprint"><%= @car.gearbox %></pre></dd>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:version) %></dt>
+      <dd><pre class="prettyprint"><%= @car.version %></pre></dd>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:yop) %></dt>
+      <dd><pre class="prettyprint"><%= @car.yop %></pre></dd>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:available) %></dt>
+      <dd><pre class="prettyprint"><%= @car.available %></pre></dd>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:image) %></dt>
+      <dd><pre class="prettyprint"><%= @car.image %></pre></dd>
+  </dl>
+</div>
 
-<p>
-  <strong>Genus:</strong>
-  <%= @car.genus %>
-</p>
-
-<p>
-  <strong>Gearbox:</strong>
-  <%= @car.gearbox %>
-</p>
-
-<p>
-  <strong>Version:</strong>
-  <%= @car.version %>
-</p>
-
-<p>
-  <strong>Yop:</strong>
-  <%= @car.yop %>
-</p>
-
-
-
-<p>
-  <strong>Image:</strong>
-  <%= image_tag @car.image.url(:thumb)%>
-</p>
-
-<p>
-  <strong>Available:</strong>
-  <%= @car.available %>
-</p>
-
-
-
-<%= link_to 'Edit', edit_car_path(@car) %> |
-<%= link_to 'Back', cars_path %>
+<div class="form-group">
+  <%= link_to t('.back', default: t("helpers.links.back")),
+              cars_path, class: 'btn btn-default'  %>
+  <%= link_to t('.edit', default: t("helpers.links.edit")),
+              edit_car_path(@car), class: 'btn btn-default' %>
+  <%= link_to t('.destroy', default: t("helpers.links.destroy")),
+              car_path(@car),
+              method: 'delete',
+              data: { confirm: t('.confirm', default: t("helpers.links.confirm", default: 'Are you sure?')) },
+              class: 'btn btn-danger' %>
+</div>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CarRental</title>
+
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+<%= link_to "Home", root_path %>
+<%= link_to "Rent information", welcome_rent_path %>
+<%= link_to "Contact", welcome_contact_path %>
+<%= link_to "About us", welcome_about_path %>
+</header>
+</ul>
+</nav>
+</div>
+
+
+
+  </body>
+</html>

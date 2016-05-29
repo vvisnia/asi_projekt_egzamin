@@ -1,53 +1,52 @@
-<%= form_for(car, html: {multipart: true}) do |f| %>
-  <% if car.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(car.errors.count, "error") %> prohibited this car from being saved:</h2>
-
-      <ul>
-      <% car.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+<%= form_for @car, html: { class: 'form-horizontal' } do |f| %>
+  <div class="form-group">
+    <%= f.label :brand, class: 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :brand, class: 'text_field form-control' %>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :brand %>
-    <%= f.text_field :brand %>
+  </div>
+  <div class="form-group">
+    <%= f.label :genus, class: 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :genus, class: 'text_field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :gearbox, class: 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :gearbox, class: 'text_field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :version, class: 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :version, class: 'text_field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :yop, class: 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :yop, class: 'text_field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :available, class: 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :available, class: 'text_field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :image, class: 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :image, class: 'text_field form-control' %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :genus %>
-    <%= f.text_field :genus %>
-  </div>
-
-  <div class="field">
-    <%= f.label :gearbox %>
-    <%= f.text_field :gearbox %>
-  </div>
-
-  <div class="field">
-    <%= f.label :version %>
-    <%= f.text_field :version %>
-  </div>
-
-  <div class="field">
-    <%= f.label :yop %>
-    <%= f.text_field :yop %>
-  </div>
-
-  <div class="field">
-    <%= f.label :image %>
-    <%= f.file_field :image %>
-  </div>
-
-  <div class="field">
-    <%= f.label :available %>
-    <%= f.check_box :available %>
-  </div>
-
-
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-group">
+    <div class='col-md-offset-2 col-md-10'>
+      <%= f.submit nil, class: 'btn btn-primary' %>
+      <%= link_to t('.cancel', default: t("helpers.links.cancel")),
+                  cars_path, class: 'btn btn-default' %>
+    </div>
   </div>
 <% end %>
