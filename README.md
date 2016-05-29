@@ -64,9 +64,17 @@ Aplikacja zawiera liste samochodów do wynajecia wraz z ich zdjęciami. Można t
 
 -wygenerowanie controlera welcome
 
--tworzenie widoków w tym controlerze
+-edycja generowanych widoków w tym controlerze
 
 -utworzenie css-a do aplikacji(generalna wizja wygladu)
+
+-fixowanie błedów
+
+-wyświtlanie kolumy BOOLEAN w tabeli cars
+
+-dodanie root_path-a do aplikacji
+
+
 
 **Proponowany termin: 30 maja. Ze wzgledu na natlok pracy przy pracy licencjackiej. Przepraszamy**
 
