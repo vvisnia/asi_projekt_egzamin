@@ -22,10 +22,24 @@ Aplikacja dla wypozyczalni samochodow.
 Aplikacja bedzie zawierala liste samochodow do wynajecia wraz z ich zdjeciami. Bedzie mozna takze dodawac komentarze oceniajace dany samochod(bez koniecznosci logowania/rejestracji). Administrator serwisu bedzie mogl dodawac/usuwac/edytowac samochody oraz oznaczac samochody, ktore nie sa aktualnie dostepne(aktualnie wypozyczone). Zarejestrowani uzytkownicy moga dodawac swoje opinie o firmie, tylko wlasciciel opini moze ja zmienic lub usunac.
 
 
+Podzial pracy:
+
+Bartosz Wisniewski
+-pomysl(wiem ze przecietny)
+-zdjecia pojazdow (carrierwave & mini_magick)
+-paginacja pojazdy/opinie(will_paginate)
+-system resjstracji i logowania(bcrypt)
+-prosta autoryzacja dla listy pojazdow
+-opinie(generowane scaffoldem)
+-pojazdy(generowane scaffoldem)
+-deploy na heroku
+-fixowanie bledow
+-walidacja tam gdzie byc powinna
+
 **Proponowany termin: 30 maja. Ze wzgledu na natlok pracy przy pracy licencjackiej. Przepraszamy**
 
 
-Dla listy pojazdow:
+Dla listy pojazdow lub kasowania komentarzy pojasdow:
 
 login : admin
 
