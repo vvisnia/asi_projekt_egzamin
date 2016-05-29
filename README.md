@@ -39,4 +39,4 @@ Rails => 5.0.0
 
 DB => SQLite
 
-[Zdeployowana apka na heroku](http://carrtental.herokuapp.com/)     todo
+[Zdeployowana apka na heroku](http://carrtental.herokuapp.com/)
