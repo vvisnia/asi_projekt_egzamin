@@ -1,9 +1,13 @@
 # asi_projekt_egzamin
-Projekt zespołowy na zaliczenie egzaminu z ASI. (JESZCZE NIE SKONCZONY!)
+Projekt zespołowy na zaliczenie egzaminu z ASI.
 
-**Nazwa grupy: **
+**Nazwa grupy:**
 
 2muchwork
+
+**Link do serwisu zewnętrznego:**
+
+[CarRental na heroku](http://carrtental.herokuapp.com/)
 
 **Sklad Grupy:**
 
@@ -12,41 +16,43 @@ Mateusz Breza
 
 **Cel aplikacji:**
 
-Aplikacja jest jednoczesnie strona-wizytowka jak i katalogiem pojazdow bedacych wlasnoscia tejze wypozyczalni. Dodatkowo istnieje serwis dla zarejestrowanych uzytkownikow w ktorym moga oni wymieniac sie opiniami o firmie.
+Aplikacja jest jednocześnie strona-wizytowka jak i katalogiem pojazdów bedacych wlasnoscia tejze wypożyczalni. Dodatkowo istnieje serwis dla zarejestrowanych uzytkownikow na którym moga oni wymieniac sie opiniami o firmie.
 
 **Opis:**
 
-Aplikacja dla wypozyczalni samochodow.
+Aplikacja dla wypożyczalni samochodów.
 
 
-Aplikacja bedzie zawierala liste samochodow do wynajecia wraz z ich zdjeciami. Bedzie mozna takze dodawac komentarze oceniajace dany samochod(bez koniecznosci logowania/rejestracji). Administrator serwisu bedzie mogl dodawac/usuwac/edytowac samochody oraz oznaczac samochody, ktore nie sa aktualnie dostepne(aktualnie wypozyczone). Zarejestrowani uzytkownicy moga dodawac swoje opinie o firmie, tylko wlasciciel opini moze ja zmienic lub usunac.
+Aplikacja zawiera liste samochodów do wynajecia wraz z ich zdjęciami. Można takze dodawać komentarze oceniajace dany samochód(bez konieczności logowania/rejestracji). Administrator serwisu może dodawac/usuwac/edytowac samochody oraz oznaczać samochody, ktore nie sa aktualnie dostępne(aktualnie wypożyczone). Zarejestrowani użytkownicy mogą dodawać swoje opinie o firmie, tylko wlaściciel opini moze ją zmienic lub usunac.
 
 
-**Podzial pracy:**
+**Podział pracy:**
 
-**Bartosz Wiśniewski**
+**Bartosz Wiśniewski:**
 
--pomysl(wiem ze przecietny)
+-pomysł(przeciętny)
 
--zdjecia pojazdow (carrierwave & mini_magick)
+-zdjęcia pojazdów (carrierwave & mini_magick)
 
 -paginacja pojazdy/opinie(will_paginate)
 
 -system resjstracji i logowania(bcrypt)
 
--prosta autoryzacja dla listy pojazdow
+-prosta autoryzacja dla listy pojazdów
 
 -opinie(generowane scaffoldem)
 
 -pojazdy(generowane scaffoldem)
 
+-userzy(kontroller generowany)
+
 -deploy na heroku
 
--fixowanie bledow
+-fixowanie błedów
 
--walidacja tam gdzie byc powinna
+-walidacja tam gdzie być powinna
 
-**Mateusz Breza**
+**Mateusz Breza:**
 
 -stworzenie tabeli comments
 
@@ -65,13 +71,13 @@ Aplikacja bedzie zawierala liste samochodow do wynajecia wraz z ich zdjeciami. B
 **Proponowany termin: 30 maja. Ze wzgledu na natlok pracy przy pracy licencjackiej. Przepraszamy**
 
 
-Dla listy pojazdow lub kasowania komentarzy pojasdow:
+Dla listy pojazdów lub kasowania komentarzy pojazdów:
 
 login : admin
 
 haslo : admin
 
-By moc uzywac serwisu z opiniami, stworz konto poprzez aplikacje.
+By móc uzywac serwisu z opiniami, stworz konto poprzez aplikacje.
 
 Ruby => 2.3.0
 
@@ -79,4 +85,15 @@ Rails => 5.0.0
 
 DB => SQLite
 
-[Zdeployowana apka na heroku](http://carrtental.herokuapp.com/)
+
+**Odpalanie lokalne:**
+
+git clone "link repo"
+
+cd carRental
+
+bundle install
+
+rake db:migrate
+
+rails s
