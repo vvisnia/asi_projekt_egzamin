@@ -1,20 +1,20 @@
 # asi_projekt_egzamin
 Projekt zespołowy na zaliczenie egzaminu z ASI. (JESZCZE NIE SKONCZONY!)
 
-Nazwa grupy: 
+**Nazwa grupy: **
 
 2muchwork
 
-Sklad Grupy:
+**Sklad Grupy:**
 
 Bartosz Wiśniewski
 Mateusz Breza
 
-Cel aplikacji:
+**Cel aplikacji:**
 
 Aplikacja jest jednoczesnie strona-wizytowka jak i katalogiem pojazdow bedacych wlasnoscia tejze wypozyczalni. Dodatkowo istnieje serwis dla zarejestrowanych uzytkownikow w ktorym moga oni wymieniac sie opiniami o firmie.
 
-Opis:
+**Opis:**
 
 Aplikacja dla wypozyczalni samochodow.
 
@@ -22,9 +22,9 @@ Aplikacja dla wypozyczalni samochodow.
 Aplikacja bedzie zawierala liste samochodow do wynajecia wraz z ich zdjeciami. Bedzie mozna takze dodawac komentarze oceniajace dany samochod(bez koniecznosci logowania/rejestracji). Administrator serwisu bedzie mogl dodawac/usuwac/edytowac samochody oraz oznaczac samochody, ktore nie sa aktualnie dostepne(aktualnie wypozyczone). Zarejestrowani uzytkownicy moga dodawac swoje opinie o firmie, tylko wlasciciel opini moze ja zmienic lub usunac.
 
 
-Podzial pracy:
+**Podzial pracy:**
 
-Bartosz Wisniewski
+**Bartosz Wisniewski**
 
 -pomysl(wiem ze przecietny)
 
