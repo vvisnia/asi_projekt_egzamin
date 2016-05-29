@@ -24,7 +24,7 @@ Aplikacja bedzie zawierala liste samochodow do wynajecia wraz z ich zdjeciami. B
 
 **Podzial pracy:**
 
-**Bartosz Wisniewski**
+**Bartosz Wiśniewski**
 
 -pomysl(wiem ze przecietny)
 
@@ -46,6 +46,20 @@ Aplikacja bedzie zawierala liste samochodow do wynajecia wraz z ich zdjeciami. B
 
 -walidacja tam gdzie byc powinna
 
+**Mateusz Breza**
+-stworzenie tabeli comments
+
+-stworzenie relacji medzy comments i cars
+
+-edycja genrowanego(scaffold) controlera do tabeli comments
+
+-stworzenie navigation-bar
+
+-wygenerowanie controlera welcome
+
+-tworzenie widoków w tym controlerze
+
+-utworzenie css-a do aplikacji(generalna wizja wygladu)
 
 **Proponowany termin: 30 maja. Ze wzgledu na natlok pracy przy pracy licencjackiej. Przepraszamy**
 
