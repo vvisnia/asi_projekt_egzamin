@@ -47,6 +47,7 @@ Aplikacja bedzie zawierala liste samochodow do wynajecia wraz z ich zdjeciami. B
 -walidacja tam gdzie byc powinna
 
 **Mateusz Breza**
+
 -stworzenie tabeli comments
 
 -stworzenie relacji medzy comments i cars
