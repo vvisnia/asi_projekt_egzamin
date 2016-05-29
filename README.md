@@ -25,16 +25,27 @@ Aplikacja bedzie zawierala liste samochodow do wynajecia wraz z ich zdjeciami. B
 Podzial pracy:
 
 Bartosz Wisniewski
+
 -pomysl(wiem ze przecietny)
+
 -zdjecia pojazdow (carrierwave & mini_magick)
+
 -paginacja pojazdy/opinie(will_paginate)
+
 -system resjstracji i logowania(bcrypt)
+
 -prosta autoryzacja dla listy pojazdow
+
 -opinie(generowane scaffoldem)
+
 -pojazdy(generowane scaffoldem)
+
 -deploy na heroku
+
 -fixowanie bledow
+
 -walidacja tam gdzie byc powinna
+
 
 **Proponowany termin: 30 maja. Ze wzgledu na natlok pracy przy pracy licencjackiej. Przepraszamy**
 
