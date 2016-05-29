@@ -13,9 +13,11 @@ Rails.application.routes.draw do
 
   get 'welcome/about'
 
+  get 'welcome/home'
+
   resources :comments
   resources :cars
-  root to: 'cars#index'
+  root to: 'welcome#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   Rails.application.routes.draw do
   resources :opinions
