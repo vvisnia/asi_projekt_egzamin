@@ -20,7 +20,7 @@
         <td><%= opinion.content %></td>
         <td><%= link_to 'Show', opinion %></td>
         <td><% if current_user && opinion.user == current_user %><%= link_to 'Edit', edit_opinion_path(opinion) %><% end %></td>
-<td><% if current_user && opinion.user == current_user %><%= link_to 'Destroy', opinion, method: :delete, data: { confirm: 'Are you sure?' } %><% end %></td>
+<td><% if current_user && opinion.user == current_user %><%= link_to 'Delete', opinion, method: :delete, data: { confirm: 'Are you sure?' } %><% end %></td>
       </tr>
     <% end %>
   </tbody>

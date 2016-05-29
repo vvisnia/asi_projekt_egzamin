@@ -4,3 +4,25 @@
 div.carfield {
   display:none;
 }
+
+
+div.user_header{
+  position: absolute;
+  right: 10%;
+  top : 7.5%;
+  font-size: 150%;
+}
+
+div.menu_header{
+  position: absolute;
+  left: 10%;
+  top : 7.5%;
+  font-size: 150%;
+  //word-spacing: 30px;
+}
+
+div.main{
+  position: absolute;
+  top : 15%;
+  left: 10%
+}

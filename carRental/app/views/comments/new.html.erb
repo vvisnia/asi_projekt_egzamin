@@ -3,7 +3,7 @@
 <hr />
 
 
-Komentarze:
+Comments:
 
 <table>
   <thead>
@@ -20,7 +20,7 @@ Komentarze:
       <tr>
         <td><%= item.nickname %></td>
         <td><%= item.content %> </td>
-        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
       <% end %>
     <% end %>

@@ -3,28 +3,33 @@
   <head>
     <title>CarRental</title>
     <%= csrf_meta_tags %>
-
+    <%= stylesheet_link_tag "application.css" %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <div id="user_header">
+    <div class="user_header">
     <% if current_user %>
     Logged in as <%= current_user.email %>.
-    <%= link_to "Log Out", logout_path %>
+    <%= link_to "Log out", logout_path %>
     <% else %>
-    <%= link_to "Sign Up", signup_path %> or
-    <%= link_to "Log In", login_path %>
+    <%= link_to "Sign in", signup_path %> or
+    <%= link_to "Log in", login_path %>
     <% end %>
-    </div>>
-<%= link_to "Home", root_path %>
-<%= link_to "Rent information", welcome_rent_path %>
-<%= link_to "Contact", welcome_contact_path %>
+    </div>
+    <div class="menu_header">
+<%= link_to "Home", root_path %> &nbsp &nbsp
+<%= link_to "Rent information", welcome_rent_path %> &nbsp &nbsp
+<%= link_to "Contact", welcome_contact_path %> &nbsp &nbsp
+<%= link_to 'Opinions', opinions_path %> &nbsp &nbsp
 <%= link_to "About us", welcome_about_path %>
-<%= link_to 'Opinions', opinions_path %> |
 
+    </div>
 
+    <div class="main">
     <%= yield %>
+    </div>
+
   </body>
 </html>

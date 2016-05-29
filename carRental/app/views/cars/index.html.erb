@@ -1,15 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Lista aut do wypozyczenia</h1>
+<h1>Cars to rent:</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Zdjecie</th>
-      <th>Marka</th>
-      <th>Model</th>
+      <th>Image</th>
+      <th>Brnad</th> &nbsp &nbsp
+      <th>Version</th>
 
-      <th>Dostepnosc</th>
+      <th>Available</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -25,11 +25,21 @@
 
         <td><%= car.version %></td>
 
-        <td><%= car.available %></td>
-        <td><%= link_to 'Detale', car %></td>
-        <td><%= link_to 'Edytuj', edit_car_path(car) %></td>
-        <td><%= link_to 'Usun', car, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <td><%= link_to 'Opinie',:controller => :comments, :action => :new, :id =>car.id%></td>
+        <td>
+
+          <% if car.available==true %>
+            <%= image_tag("accept.png", :alt => "rss feed") %>
+          <% else %>
+              <%= image_tag("decline.png", :alt => "rss feed") %>
+          <% end %>
+        </td>
+
+
+
+        <td><%= link_to 'Show', car %></td>
+        <td><%= link_to 'Edit', edit_car_path(car) %></td>
+        <td><%= link_to 'Delete', car, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Comments',:controller => :comments, :action => :new, :id =>car.id%></td>
       </tr>
     <% end %>
   </tbody>
@@ -37,4 +47,4 @@
 
 <br>
 
-<%= link_to 'Dodaj pojazd', new_car_path %>
+<%= link_to 'Add', new_car_path %>
