@@ -27,11 +27,11 @@ gem 'jbuilder', '~> 2.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem 'carrierwave'
+#gem 'carrierwave'
 gem 'mini_magick', '3.8.0'
 gem 'bcrypt', '~> 3.1.7'
 gem 'will_paginate', '~> 3.1.0'
-
+gem 'carrierwave-dropbox'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
