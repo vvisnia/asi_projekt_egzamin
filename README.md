@@ -37,7 +37,7 @@ Mielismy problem z znikajacymi obrazkami.(link wyjasniajacy problem: http://stac
 
 -pomysł(przeciętny)
 
--zdjęcia pojazdów (carrierwave & mini_magick)
+-zdjęcia pojazdów (carrierwave & mini_magick) => po poprawce (carrierwave-dropbox & mini_magic)
 
 -paginacja pojazdy/opinie(will_paginate)
 
