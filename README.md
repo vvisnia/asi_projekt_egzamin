@@ -25,6 +25,10 @@ Aplikacja dla wypożyczalni samochodów.
 
 Aplikacja zawiera liste samochodów do wynajecia wraz z ich zdjęciami. Można takze dodawać komentarze oceniajace dany samochód(bez konieczności logowania/rejestracji). Administrator serwisu może dodawac/usuwac/edytowac samochody oraz oznaczać samochody, ktore nie sa aktualnie dostępne(aktualnie wypożyczone). Zarejestrowani użytkownicy mogą dodawać swoje opinie o firmie, tylko wlaściciel opini moze ją zmienic lub usunac.
 
+**Problem z obrazkami**
+poprawił: Bartosz Wisniewski
+
+Mielismy problem z znikajacymi obrazkami. Poprawilem to w taki sposob ze uploaduje sie je do app_folder-u dropboxa wiec nasze zdjecia nie znikna. Poprawke wykonalem zgodnie z instrukcja zawarta na podanym repo. (https://github.com/robin850/carrierwave-dropbox)
 
 **Podział pracy:**
 
