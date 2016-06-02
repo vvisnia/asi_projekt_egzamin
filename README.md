@@ -29,7 +29,7 @@ Aplikacja zawiera liste samochodów do wynajecia wraz z ich zdjęciami. Można t
 
 poprawił: Bartosz Wisniewski
 
-Mielismy problem z znikajacymi obrazkami.(link wyjasniajacy problem: http://stackoverflow.com/questions/16210486/picture-disappeared-on-heroku) Poprawilem to w taki sposob ze uploaduje sie je do app_folder-u dropboxa wiec nasze zdjecia nie znikna. Poprawke wykonalem zgodnie z instrukcja zawarta na podanym repo. (link do repo opisem jak podpiac dropboxa do railsowej apki: https://github.com/robin850/carrierwave-dropbox)
+Mielismy problem z znikajacymi obrazkami.(link wyjasniajacy problem: http://stackoverflow.com/questions/16210486/picture-disappeared-on-heroku) Poprawilem to w taki sposob ze uploaduje sie je do app_folder-u dropboxa wiec nasze zdjecia nie znikna. Poprawke wykonalem zgodnie z instrukcja zawarta na podanym repo. (link do repo z opisem jak podpiac dropboxa do railsowej apki: https://github.com/robin850/carrierwave-dropbox)
 
 **Podział pracy:**
 
